@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "express": "^4.16.4",
     "heroku": "^7.21.0",
     "twit": "^2.2.11"
   },
