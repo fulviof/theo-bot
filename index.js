@@ -20,7 +20,12 @@ app.listen(port, function () {
   console.log('listening on port 8080!');
 });
 
-var palavras = ["tudo bem?", "abracadabra", "namora comigo amor", "eu amo vc menina", "te amo na boca", "prometo melhorar", "todas lindas"]
+var palavras = ["Eai, mais uma hora ou duas? Bora lek!", "EU TE ENFIO-LHE A MAO NA CARA, NAO SOBRA NADA!", "Num to nem ai, dou um mergulho na piscina, dou um jeito aqui e to pronto mané", 
+"Lugar de lava roupa é no tanque, OTARIO!", "Sou eu que to tomando GH, né o anabolizante, e não faz nem efeito de tão frangote que é, OLHA AÍ, NÃO FAZ EFEITO HAHA OTÁRIO!", 
+"Tu viu que que é de frente a frente agora? TU VAI TE DA DE FRENTE COM UM CAMINHÃO RAPAZ!", "Eu vo te arrebenta, dente por dente, e se não tiver ninguém pra separa mermão (OU VAI TOMA BANHO VELHO!), cê ta fudido na minha",
+"Esse aqui ó é irmão desse aqui ó, e esse AQUI Ó É IRMAO DESSE AQUI Ó!", "Ó FEY FEY FEY NA SUA CARA!", "Se eu soubesse que aquela criatura angelical seria apreciada por tanta atrocidade, tão impiamente profanada, por certo preferia ser atacado a nudez, que trazê-la conversação",
+"Eu não aguento mais, te bota no meu lugar, lek T-T", "Cê já jogo war? Que que acontece quando um cara ta dominando a Europa? Vem todo mundo e... te ataca para ele se enfraquece!",
+"Na tua cabeça, eu dominei, eu não acho que eu dominei nada", "Eu não acho que eu dominei nada, eu to vendo na sua cabeça", "Olha aí tu viu, toquei no teu ponto fraco, era isso num era?"]
 
 setInterval(function() {
 
