@@ -2,6 +2,8 @@ var express = require('express');
 const Twit = require('twit')
 var app = express();
 
+var port = process.env.PORT || 8080;
+
 const T = new Twit({
     consumer_key:         'bO45o9xiXLisoVfDarFRZ85vS',
     consumer_secret:      'PcZGtXxOyUCHHLjrF0eLj6WHbxozZ8yXETnhBC5rPF3anOxPyJ',
@@ -14,8 +16,8 @@ app.get('/', function (req, res) {
   res.send('Bot em funcionamento!');
 });
 
-app.listen(5000, function () {
-  console.log('listening on port 5000!');
+app.listen(port, function () {
+  console.log('listening on port 8080!');
 });
 
 var palavras = ["tudo bem?", "abracadabra", "namora comigo amor", "eu amo vc menina", "te amo na boca", "prometo melhorar", "todas lindas"]
