@@ -14,8 +14,8 @@ app.get('/', function (req, res) {
   res.send('Bot em funcionamento!');
 });
 
-app.listen(3000, function () {
-  console.log('listening on port 3000!');
+app.listen(5000, function () {
+  console.log('listening on port 5000!');
 });
 
 var palavras = ["tudo bem?", "abracadabra", "namora comigo amor", "eu amo vc menina", "te amo na boca", "prometo melhorar", "todas lindas"]
