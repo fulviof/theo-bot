@@ -2,6 +2,32 @@ var express = require('express');
 const Twit = require('twit')
 var app = express();
 
+var http = require('http'); //importing http
+
+function startKeepAlive() {
+    setInterval(function() {
+        var options = {
+            host: 'bot-theo.herokuapp.com',
+            port: 80,
+            path: '/'
+        };
+        http.get(options, function(res) {
+            res.on('data', function(chunk) {
+                try {
+                    // optional logging... disable after it's working
+                    console.log("HEROKU RESPONSE: " + chunk);
+                } catch (err) {
+                    console.log(err.message);
+                }
+            });
+        }).on('error', function(err) {
+            console.log("Error: " + err.message);
+        });
+    }, 20 * 60 * 1000); // load every 20 minutes
+}
+
+startKeepAlive();
+
 var port = process.env.PORT || 8080;
 
 const T = new Twit({
@@ -33,10 +59,10 @@ setInterval(function() {
 
     T.post('statuses/update', { status: palavras[indice]}, (err, data, response) => {
         if (!err) {
-          console.log('It worked!')
+          console.log('Tweet postado!')
         }
         else{
-            console.log("Doesn't worked!")
+            console.log("Falha ao postar tweet!")
         }
       })
 }, 600000)
