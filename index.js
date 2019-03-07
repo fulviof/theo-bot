@@ -65,4 +65,4 @@ setInterval(function() {
             console.log("Falha ao postar tweet!")
         }
       })
-}, 600000)
+}, 216000000)
