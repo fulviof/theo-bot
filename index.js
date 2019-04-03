@@ -23,7 +23,7 @@ function startKeepAlive() {
         }).on('error', function(err) {
             console.log("Error: " + err.message);
         });
-    }, 20 * 60 * 1000); // load every 20 minutes
+    }, 50 * 60 * 1000); // load every 20 minutes
 }
 
 startKeepAlive();
@@ -65,4 +65,4 @@ setInterval(function() {
             console.log("Falha ao postar tweet!")
         }
       })
-}, 216000000)
+}, 3600000)
