@@ -23,7 +23,7 @@ function startKeepAlive() {
         }).on('error', function(err) {
             console.log("Error: " + err.message);
         });
-    }, 50 * 60 * 1000); // load every 20 minutes
+    }, 29 * 60 * 1000); // load every 29 minutes (idle on heroku is 30)
 }
 
 startKeepAlive();
